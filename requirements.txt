@@ -1,0 +1,22 @@
+asgiref
+autopep8
+
+pycodestyle
+pytz
+sqlparse
+Unipath
+dj-database-url
+python-decouple
+gunicorn
+whitenoise
+Pillow
+
+Django ==4.0.1
+django-cors-headers == 3.10.1
+djangorestframework == 3.13.1
+djangorestframework-simplejwt == 5.0.0
+PyJWT == 2.3.0
+
+
+django-filter==21.1
+drf-api-logger
