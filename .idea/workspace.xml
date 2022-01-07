@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="289b8ee8-01f8-448a-8c41-19778ca5b100" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LemkenOnlinePortal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIs/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIs/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APIs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coreSettings/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/coreSettings/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommunicationUnits/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Licences/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SiteLogs/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coreSettings/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/coreSettings/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coreSettings/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/coreSettings/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641532238850</updated>
-      <workItem from="1641532241875" duration="1273000" />
+      <workItem from="1641532241875" duration="4350000" />
     </task>
     <servers />
   </component>
