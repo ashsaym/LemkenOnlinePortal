@@ -5,6 +5,22 @@ from django.db import migrations, models
 import django.db.models.deletion
 import django.utils.timezone
 
+from Users.models import CustomUser
+
+
+def create_user(apps, schema_editor):
+    CustomUser.objects.create_superuser(email="saym@outlook.de", password="Saym7296")
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+    ]
+
+    operations = [
+        migrations.RunPython(create_user)
+    ]
+
 
 class Migration(migrations.Migration):
 
@@ -60,4 +76,5 @@ class Migration(migrations.Migration):
                 'verbose_name_plural': 'Profiles',
             },
         ),
+        migrations.RunPython(create_user)
     ]

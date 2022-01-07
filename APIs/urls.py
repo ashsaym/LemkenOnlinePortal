@@ -6,7 +6,8 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register('connect', views.PingViewSet, basename="connect")
+router.register('ping', views.PingViewSet, basename="ping")
+router.register('connect', views.ConnectCheckViewSet, basename="connect")
 router.register('Connect/Check', views.ConnectionCheck, basename="ConnectionCheck")
 router.register('licences/list', views.ShowLicenceDetailsView, basename="licencesView")
 

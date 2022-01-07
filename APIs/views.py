@@ -7,7 +7,8 @@ from rest_framework.viewsets import GenericViewSet
 from Licences.models import LicenceDetails
 from CommunicationUnits.models import CommunicationUnit, CommunicationUnitCCIDetails
 
-from APIs.serializers import serializeLicence, serializeOneLicence, serializeCommunicationUnitDetails,serializeCommunicationUnit
+from APIs.serializers import serializeLicence, serializeOneLicence, serializeCommunicationUnitDetails, \
+    serializeCommunicationUnit
 from django.http import Http404
 
 from rest_framework.views import APIView
@@ -16,6 +17,16 @@ from rest_framework import status
 
 
 class PingViewSet(GenericViewSet, ListModelMixin):
+    permission_classes = [IsAuthenticated]
+
+    def list(self, request, *args, **kwargs):
+        return Response(
+            data={"id": request.GET.get("id")},
+            status=HTTP_200_OK
+        )
+
+
+class ConnectCheckViewSet(GenericViewSet, ListModelMixin):
     permission_classes = [IsAuthenticated]
 
     def list(self, request, *args, **kwargs):

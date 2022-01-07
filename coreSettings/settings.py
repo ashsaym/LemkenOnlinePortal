@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'drf_api_logger',
     'drf_yasg',
     'django_filters',
+    'corsheaders',
+
     'Users',
     'SiteLogs',
     'CommunicationUnits',
@@ -79,6 +81,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'coreSettings.urls'
@@ -170,3 +173,4 @@ CORS_ALLOW_CREDENTIALS = True
 
 # change 'https://example-prod-react.com' to your frontend domain
 CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+
