@@ -7,7 +7,7 @@
 [Ss]cripts
 pyvenv.cfg
 .venv
-__pycache__
+__pycache__/
 __pycache__/*
 /*__pycache__
 pip-selfcheck.json

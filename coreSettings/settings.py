@@ -110,8 +110,12 @@ WSGI_APPLICATION = 'coreSettings.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'iqblue',
+        'USER': 'root',
+        'PASSWORD': 'Saym7296',
+        'HOST': 'dbs.iqblue.ml',
+        'PORT': '3306',
     }
 }
 
