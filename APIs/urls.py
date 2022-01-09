@@ -13,7 +13,7 @@ router.register('licences/list', views.ShowLicenceDetailsView, basename="licence
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('rest_framework.urls')),
+    path('auth/', include('rest_framework.urls')),
     path('token/get/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/renew/', TokenRefreshView.as_view(), name='token_get_access'),
 
