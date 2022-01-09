@@ -174,7 +174,8 @@ DRF_API_LOGGER_DATABASE = True
 DRF_LOGGER_INTERVAL = 10
 # Cors Settings
 CORS_ALLOW_CREDENTIALS = True
-
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['https://api-iqblue.ml']
 # change 'https://example-prod-react.com' to your frontend domain
-CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
+# CORS_ORIGIN_WHITELIST = ['http://localhost:3000']
 
