@@ -13,15 +13,15 @@ router.register('licences/list', views.ShowLicenceDetailsView, basename="licence
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/auth/', include('rest_framework.urls')),
-    path('api/token/get/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/renew/', TokenRefreshView.as_view(), name='token_get_access'),
+    path('auth/', include('rest_framework.urls')),
+    path('token/get/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/renew/', TokenRefreshView.as_view(), name='token_get_access'),
 
-    path('api/CommunicationUnit/List/', views.CommunicationUnitListView.as_view(), name='CommunicationUnitListView'),
-    path('api/CommunicationUnit/Details/<str:pk>', views.CommunicationUnitDetailView.as_view(),
+    path('CommunicationUnit/List/', views.CommunicationUnitListView.as_view(), name='CommunicationUnitListView'),
+    path('CommunicationUnit/Details/<str:pk>', views.CommunicationUnitDetailView.as_view(),
          name='CommunicationUnitDetails'),
 
-    path('api/licences/check/status/<str:Serial_Number>&&<str:license_type>',
+    path('licences/check/status/<str:Serial_Number>&&<str:license_type>',
          views.ShowOneLicenceDetailsForMachine),
-    path('api/', include(router.urls))
+    path('', include(router.urls))
 ]
